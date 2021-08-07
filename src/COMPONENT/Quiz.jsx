@@ -7,8 +7,10 @@ import {setTime} from './timerSlice'
 import StopWatch from './ICON/StopWatch'
 
 function Quiz(){
+
     const dispatch=useDispatch();
     const time = useSelector((state) => state.timer.time)
+    
     const[currQuesion,setCurrQuestion]=useState(0)
     const[showScore,setShowScore]=useState(false)
     const[score,SetScore]=useState(0)
